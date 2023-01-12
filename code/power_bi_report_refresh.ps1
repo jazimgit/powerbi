@@ -1,7 +1,7 @@
 #setting home path
 echo "running script is very good"
 
-cd test
+cd ..\test
 $file_list=$(Get-ChildItem -name)
 
 Write-Host $file_list
