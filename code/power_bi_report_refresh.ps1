@@ -1,7 +1,9 @@
 #setting home path
 $HOME_PATH=$(echo "$pwd")
 
-$file_with_home_path="$HOME_PATH\power_bi_report_refresh.ps1"
+$script_dir="$HOME_PATH\code"
 
-echo "$file_with_home_path"
+cd $script_dir
+
+.\power_bi_report_refresh.ps1
 
