@@ -18,11 +18,12 @@ foreach ($x in $file_list)
 }
 
 $comma_file="file1.pbix,file2.pbix,file3.pbix"
+$comm_list=$comma_file.Split(",")
 
-foreach ($y in $comma_file)
+foreach ($y in $comma_list)
 {
   Write-Host "this is printing $x"
-  $report_name=$($x.split(",")[-2])
+  $report_name=$($y.split(",")[-2])
 
   Write-Host "command run here to update dataset $report_name"
 
