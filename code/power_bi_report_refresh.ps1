@@ -23,7 +23,7 @@ $comma_list=$comma_file.Split(",")
 foreach ($y in $comma_list)
 {
   Write-Host "this is printing $y"
-  $report_name=$($y.split(",")[-2])
+  $report_name=$($y.split(".")[-2])
 
   Write-Host "command run here to update dataset $report_name"
 
