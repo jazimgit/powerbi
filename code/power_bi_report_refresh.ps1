@@ -17,9 +17,8 @@ foreach ($x in $file_list)
 
 }
 
-$comma_file="file1.pbix,file2.pbix,file3.pbix"
+$comma_file="file1.pbix"
 $comma_list=$comma_file.Split(",")
-
 foreach ($y in $comma_list)
 {
   Write-Host "this is printing $y"
