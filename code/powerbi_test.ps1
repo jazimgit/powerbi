@@ -6,11 +6,10 @@ param (
     $Report_name,
 
     [Parameter(Mandatory=$true, Position=0, ValueFromPipeline=$false)]
-    $Gateway_Connection
+    $Gateway_Connection,
 
     [Parameter(Mandatory=$true, Position=0, ValueFromPipeline=$false)]
     $WORKSPACE
-
 )
 
 Write-Host $ENV
